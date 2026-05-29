@@ -1,16 +1,52 @@
-# React + Vite
+# 🌌 Cyber-Space Interactive Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A futuristic, high-performance personal portfolio website built with **React**, **Tailwind CSS**, and **Framer Motion**. The interface features deep-space ambient aesthetics, dynamic 3D parallax layers, interactive hover effect matrices, and clean, scannable structural typography.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo & Links
 
-## React Compiler
+You can explore the live deployment or view the underlying codebase using the links below:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Live Production Link:** [https://pallavi-sarovar.vercel.app](https://your-live-portfolio-link.com) *(Update with your actual URL)*
+* **Source Code Repository:** [github.com/pallavi-676/portfolio](https://github.com/pallavi-676)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Arsenal & Frameworks
+
+* **Core Architecture:** React.js (Vite configuration)
+* **Styling Engine:** Tailwind CSS (Utilizing utility-first design layouts, backdrop blurs, and glassmorphism)
+* **Animation System:** Framer Motion (Driving advanced hook states like `useMotionValue` and `useTransform`)
+* **Vector Library:** Lucide React (Providing crisp, lightweight UI icons)
+
+---
+
+## ✨ Standout Engineering Features
+
+### 1. Dynamic Grayscale-to-Color Reveal
+Instead of using basic opacity fades, the Profile image utilizes a advanced CSS `mask-image` driven by `radial-gradient` vectors. 
+* **Idle State:** The image renders in an ambient, muted grayscale layout (`grayscale contrast-[1.15] brightness-90`).
+* **Hover State:** The cursor acts like a soft focus airbrush, seamlessly blending the natural, true-color image layer right beneath the user's mouse position with zero rigid edges.
+
+### 2. 3D Tilt & Parallax Physics
+The interactive profile card tracks cursor positional coordinates relative to its bounding container box. Mouse tracking metrics are dynamically translated into real-time sub-pixel rotation transformations (`rotateX`, `rotateY`), adding true 3D spatial depth.
+
+### 3. Animated Holographic Technical Rings
+The UI features double-layered vector SVG circles enveloping interactive components that rotate asynchronously in opposite directions via custom infinite Tailwind CSS animation keyframes (`animate-spin`).
+
+---
+
+## 📂 File Architecture
+
+```text
+src/
+├── components/
+│   ├── About.jsx       # Streamlined, non-repetitive bio segment & mask image matrix
+│   ├── Hero.jsx        # Space-ambient introduction card layout
+│   ├── Skills.jsx      # Categorized engineering tools and language units
+│   ├── Projects.jsx    # Glassmorphic display gallery showcase
+│   └── Contact.jsx     # Modern terminal communication layout form
+├── data/
+│   └── portfolio.js    # Clean centralized state data configurations
+└── index.css           # Tailwind configurations and glass-panel custom layer rules
