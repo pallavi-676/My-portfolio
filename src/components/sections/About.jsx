@@ -14,7 +14,7 @@ export function About() {
   // Tracks cursor percentage locations for the soft color reveal blend
   const maskX = useMotionValue("50%");
   const maskY = useMotionValue("50%");
-  
+
   // Controls color layer visibility (0 = fully grayscale, 1 = hover active)
   const hoverOpacity = useMotionValue(0);
 
@@ -27,7 +27,7 @@ export function About() {
     const rect = cardRef.current.getBoundingClientRect();
     const width = rect.width;
     const height = rect.height;
-    
+
     // Calculate 3D card tilt coordinates
     const mouseX = event.clientX - rect.left - width / 2;
     const mouseY = event.clientY - rect.top - height / 2;
@@ -39,7 +39,7 @@ export function About() {
     const pctY = ((event.clientY - rect.top) / height) * 100;
     maskX.set(`${pctX}%`);
     maskY.set(`${pctY}%`);
-    
+
     hoverOpacity.set(1);
   }
 
@@ -111,7 +111,7 @@ export function About() {
             className="relative w-full max-w-[340px] aspect-square rounded-[2rem] overflow-hidden glass-panel p-3 border border-white/10 hover:border-blue-500/40 shadow-2xl transition-all duration-300"
           >
             <div className="w-full h-full rounded-[1.5rem] overflow-hidden bg-black relative">
-              
+
               {/* DEFAULT BACKGROUND LAYER: Muted grayscale version */}
               <img
                 src={about.profileImage}
@@ -121,17 +121,17 @@ export function About() {
 
               {/* DYNAMIC REVEAL LAYER: True colors brush mask on pointer hover */}
               <motion.div
-                style={{ 
+                style={{
                   WebkitMaskImage: maskString,
                   maskImage: maskString,
-                  opacity: hoverOpacity
+                  opacity: hoverOpacity,
                 }}
                 className="absolute inset-0 pointer-events-none transition-opacity duration-300 ease-out"
               >
                 <img
-                  src={about.profileImage}
-                  alt={`${about.name} vibrant color layer`}
-                  className="w-full h-full object-cover rounded-[1.5rem] select-none scale-102 group-hover:scale-105 transition-transform duration-700"
+                  src="/image.jpeg"
+                  alt={about.name}
+                  className="w-full h-full object-cover rounded-[1.5rem] select-none scale-102 group-hover:scale-105 transition-transform duration-700 grayscale contrast-[1.15] brightness-90 opacity-70"
                 />
               </motion.div>
 
