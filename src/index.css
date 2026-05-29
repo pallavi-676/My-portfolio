@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --os-bg: #030303;
+    --os-surface: #070708;
+    --os-text: #ffffff;
+    --os-text-dim: #94a3b8;
+    --os-accent: #3b82f6;
+    --os-border: rgba(255, 255, 255, 0.05);
+    --mesh-opacity: 0.12;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+
+  body, button, a, input, textarea {
+    cursor: none !important;
+  }
+
+  body {
+    background-color: var(--os-bg);
+    color: var(--os-text);
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Premium Mesh Background for Space Mode */
+  .mesh-gradient {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: 
+      radial-gradient(circle at 10% 20%, rgba(59, 130, 246, var(--mesh-opacity)) 0%, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(6, 182, 212, calc(var(--mesh-opacity) * 0.8)) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(99, 102, 241, calc(var(--mesh-opacity) * 0.5)) 0%, transparent 50%);
+    filter: blur(100px);
+  }
+
+  /* Professional High-Tech Glassmorphism */
+  .glass-panel {
+    background: rgba(7, 7, 8, 0.45);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    border: 1px solid var(--os-border);
+    transition: border-color 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
+                background-color 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .text-hollow {
+    -webkit-text-stroke: 1.5px var(--os-text);
+    color: transparent !important;
+  }
+
+  .perspective-container {
+    perspective: 2000px;
+  }
+
+  /* Shimmer Hover Sweep Animation Keyframe */
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  /* Apply Shimmer animation on active group hovers */
+  .group:hover .group-hover\:animate-shimmer {
+    animation: shimmer 1.5s infinite;
+  }
+}
