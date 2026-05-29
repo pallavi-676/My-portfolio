@@ -1,52 +1,137 @@
-# 🌌 Cyber-Space Interactive Portfolio
+# 🌌 Pallavi Sarovar — Developer Portfolio
 
-A futuristic, high-performance personal portfolio website built with **React**, **Tailwind CSS**, and **Framer Motion**. The interface features deep-space ambient aesthetics, dynamic 3D parallax layers, interactive hover effect matrices, and clean, scannable structural typography.
-
----
-
-## 🚀 Live Demo & Links
-
-You can explore the live deployment or view the underlying codebase using the links below:
-
-[Portfolio]https://my-portfolio-xi-ten-duo4dgpa23.vercel.app/
-* **Source Code Repository:** [github.com/pallavi-676/portfolio](https://github.com/pallavi-676)
+A modern futuristic developer portfolio built with React, Tailwind CSS, and Framer Motion. Designed to showcase projects, technical skills, education, and professional growth through an immersive space-inspired user experience.
 
 ---
 
-## 🛠️ Tech Arsenal & Frameworks
+## 🚀 Live Demo
 
-* **Core Architecture:** React.js (Vite configuration)
-* **Styling Engine:** Tailwind CSS (Utilizing utility-first design layouts, backdrop blurs, and glassmorphism)
-* **Animation System:** Framer Motion (Driving advanced hook states like `useMotionValue` and `useTransform`)
-* **Vector Library:** Lucide React (Providing crisp, lightweight UI icons)
+**Portfolio:** https://pallavi-sarovar.vercel.app
 
----
-
-## ✨ Standout Engineering Features
-
-### 1. Dynamic Grayscale-to-Color Reveal
-Instead of using basic opacity fades, the Profile image utilizes a advanced CSS `mask-image` driven by `radial-gradient` vectors. 
-* **Idle State:** The image renders in an ambient, muted grayscale layout (`grayscale contrast-[1.15] brightness-90`).
-* **Hover State:** The cursor acts like a soft focus airbrush, seamlessly blending the natural, true-color image layer right beneath the user's mouse position with zero rigid edges.
-
-### 2. 3D Tilt & Parallax Physics
-The interactive profile card tracks cursor positional coordinates relative to its bounding container box. Mouse tracking metrics are dynamically translated into real-time sub-pixel rotation transformations (`rotateX`, `rotateY`), adding true 3D spatial depth.
-
-### 3. Animated Holographic Technical Rings
-The UI features double-layered vector SVG circles enveloping interactive components that rotate asynchronously in opposite directions via custom infinite Tailwind CSS animation keyframes (`animate-spin`).
+**GitHub Repository:** https://github.com/pallavi-676
 
 ---
 
-## 📂 File Architecture
+## ✨ Features
 
-```text
-src/
-├── components/
-│   ├── About.jsx       # Streamlined, non-repetitive bio segment & mask image matrix
-│   ├── Hero.jsx        # Space-ambient introduction card layout
-│   ├── Skills.jsx      # Categorized engineering tools and language units
-│   ├── Projects.jsx    # Glassmorphic display gallery showcase
-│   └── Contact.jsx     # Modern terminal communication layout form
-├── data/
-│   └── portfolio.js    # Clean centralized state data configurations
-└── index.css           # Tailwind configurations and glass-panel custom layer rules
+* Futuristic space-themed interface
+* Dark & Light mode support
+* Glassmorphism-inspired UI
+* Interactive custom cursor
+* Smooth scrolling navigation
+* Responsive design across all devices
+* Animated project showcase gallery
+* Resume download integration
+* Modern contact section
+* Framer Motion powered animations
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* JavaScript
+* HTML5
+* CSS3
+* Tailwind CSS
+
+### Animations
+
+* Framer Motion
+
+### Tools
+
+* Git
+* GitHub
+* VS Code
+* Figma
+
+### Deployment
+
+* Vercel
+
+---
+
+## 📂 Featured Projects
+
+### 🤖 Jarvis AI Assistant
+
+Python-based voice assistant capable of processing commands and automating basic tasks.
+
+**Tech:** Python, Speech Recognition, Text-to-Speech
+
+### ⌨️ Typing Speed Analyzer
+
+Desktop application for measuring typing speed, accuracy, and performance metrics.
+
+**Tech:** Python, Tkinter
+
+### ⏱️ Pomodoro Productivity Timer
+
+Focus timer application inspired by the Pomodoro technique with responsive UI and session tracking.
+
+**Tech:** HTML5, CSS3, JavaScript
+
+### ✅ To-Do Management App
+
+Task management application with persistent local storage and clean user experience.
+
+**Tech:** HTML5, CSS3, JavaScript, Local Storage API
+
+---
+
+## 🎓 Education
+
+**Bachelor of Technology (B.Tech)**
+Computer Science Engineering
+2025 – Present
+
+---
+
+## 📸 Portfolio Highlights
+
+* Interactive hero section
+* Professional about section
+* Technical skills showcase
+* Gallery-style project presentation
+* Resume download section
+* Contact form integration
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/pallavi-676/my-portfolio.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd my-portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+---
+
