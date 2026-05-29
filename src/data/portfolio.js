@@ -2,6 +2,7 @@ import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaPython, FaGitAlt, FaGithub } from 
 import { SiTailwindcss, SiCplusplus, SiNextdotjs, SiTypescript, SiFigma } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
+
 export const portfolioData = {
   about: {
     name: "Pallavi Sarovar",
@@ -11,7 +12,7 @@ export const portfolioData = {
     email: "pallavisarovar1099@gmail.com",
     github: "https://github.com/pallavi-676",
     linkedin: "https://www.linkedin.com/in/pallavi-sarovar-859083383/",
-    profileImage: "/src/assets/images/image.jpeg",
+    profileImage: "src/assets/images/image.jpeg",
     status: "1st Year B.Tech Student",
     focus: "Modern Web Applications"
   },
