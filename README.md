@@ -6,9 +6,7 @@ A modern futuristic developer portfolio built with React, Tailwind CSS, and Fram
 
 ## 🚀 Live Demo
 
-**Portfolio:** https://pallavi-sarovar.vercel.app
-
-**GitHub Repository:** https://github.com/pallavi-676
+🔗 [Portfolio's live link](https://my-portfolio-xi-ten-duo4dgpa23.vercel.app/)
 
 ---
 
