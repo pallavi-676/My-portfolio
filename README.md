@@ -8,7 +8,7 @@ A futuristic, high-performance personal portfolio website built with **React**, 
 
 You can explore the live deployment or view the underlying codebase using the links below:
 
-* **Live Production Link:** [https://pallavi-sarovar.vercel.app](https://your-live-portfolio-link.com) *(Update with your actual URL)*
+[Portfolio]https://my-portfolio-xi-ten-duo4dgpa23.vercel.app/
 * **Source Code Repository:** [github.com/pallavi-676/portfolio](https://github.com/pallavi-676)
 
 ---
