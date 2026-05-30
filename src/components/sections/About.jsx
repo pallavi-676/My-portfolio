@@ -3,7 +3,6 @@ import { portfolioData } from "../../data/portfolio";
 import { Code2, GraduationCap, ShieldCheck } from "lucide-react";
 import { useRef } from "react";
 
-
 export function About() {
   const { about } = portfolioData;
   const cardRef = useRef(null);
@@ -115,12 +114,12 @@ export function About() {
 
               {/* DEFAULT BACKGROUND LAYER: Muted grayscale version */}
               <img
-                src={about.profileImage || "src/assets/images/image.jpeg"}
+                src={about.profileImage}
                 alt={about.name}
                 className="w-full h-full object-cover rounded-[1.5rem] select-none scale-102 group-hover:scale-105 transition-transform duration-700 grayscale contrast-[1.15] brightness-90 opacity-70"
               />
 
-              {/* DYNAMIC REVEAL LAYER: True colors brush mask on pointer hover */}
+              {/* DYNAMIC REVEAL LAYER: True color layer (Grayscale utilities removed) */}
               <motion.div
                 style={{
                   WebkitMaskImage: maskString,
@@ -130,9 +129,9 @@ export function About() {
                 className="absolute inset-0 pointer-events-none transition-opacity duration-300 ease-out"
               >
                 <img
-                  src="src/assets/images/image.jpeg"
+                  src={about.profileImage}
                   alt={about.name}
-                  className="w-full h-full object-cover rounded-[1.5rem] select-none scale-102 group-hover:scale-105 transition-transform duration-700 grayscale contrast-[1.15] brightness-90 opacity-70"
+                  className="w-full h-full object-cover rounded-[1.5rem] select-none scale-102 group-hover:scale-105 transition-transform duration-700"
                 />
               </motion.div>
 

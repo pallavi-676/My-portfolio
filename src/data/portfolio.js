@@ -2,6 +2,13 @@ import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaPython, FaGitAlt, FaGithub } from 
 import { SiTailwindcss, SiCplusplus, SiNextdotjs, SiTypescript, SiFigma } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
+// Explicit Asset Imports for Production Build Bundling
+import profileImg from "../assets/images/image.jpeg";
+import jarvisImg from "../assets/images/jarvis.png";
+import quizImg from "../assets/images/quiz.png";
+import calcImg from "../assets/images/calculator.png";
+import mediaSearchImg from "../assets/images/image_0.png";
+import quoteImg from "../assets/images/image_1.png";
 
 export const portfolioData = {
   about: {
@@ -12,7 +19,7 @@ export const portfolioData = {
     email: "pallavisarovar1099@gmail.com",
     github: "https://github.com/pallavi-676",
     linkedin: "https://www.linkedin.com/in/pallavi-sarovar-859083383/",
-    profileImage: "src/assets/images/image.jpeg",
+    profileImage: profileImg,
     status: "1st Year B.Tech Student",
     focus: "Modern Web Applications"
   },
@@ -59,7 +66,7 @@ export const portfolioData = {
       tech: ["Python", "Speech Recognition", "Text-to-Speech"],
       github: "https://github.com/pallavi-676/Jarvis",
       link: "https://github.com/pallavi-676/Jarvis",
-      image: "/src/assets/images/jarvis.png"
+      image: jarvisImg
     },
     {
       id: 2,
@@ -95,7 +102,7 @@ export const portfolioData = {
       tech: ["HTML5", "CSS3", "JavaScript"],
       github: "https://github.com/pallavi-676/quiz-app",
       link: "https://quiz-app-ps.netlify.app/",
-      image: "/src/assets/images/quiz.png"
+      image: quizImg
     },
     {
       id: 6,
@@ -104,16 +111,16 @@ export const portfolioData = {
       tech: ["HTML5", "CSS3", "JavaScript"],
       github: "https://github.com/pallavi-676/modern-calculator-web-app",
       link: "https://calculator-web-ps.netlify.app/",
-      image: "/src/assets/images/calculator.png"
+      image: calcImg
     },
     {
       id: 7,
-      title: " React Media Search",
+      title: "React Media Search",
       description: "A responsive media search application built with React.js, utilizing the API to fetch and display stickers, photos, videos and GIFs. Features dynamic search capabilities, structured result layouts, and seamless user interactions.",
       tech: ["React.js", "API Integration"],
       github: "https://github.com/pallavi-676/react-media-search",
       link: "https://react-media-search.vercel.app/",
-      image: 'src/assets/images/image_0.png'
+      image: mediaSearchImg
     },
     {
       id: 8,
@@ -122,7 +129,7 @@ export const portfolioData = {
       tech: ["JavaScript", "HTML5", "CSS3"],
       github: "https://github.com/pallavi-676/random-quote-generator",
       link: "https://quotes-generator-eight-henna.vercel.app/",
-      image: "src/assets/images/image_1.png"
+      image: quoteImg
     }
   ],
   education: [
